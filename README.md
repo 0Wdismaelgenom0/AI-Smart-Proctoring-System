@@ -30,3 +30,26 @@ Smart-Proctoring-System/
 │
 └── icons/                      # Central repository for visual assets and icons
  
+🚀 Key Features
+​⚡ Asynchronous Multi-Threading (QThread): Heavy operations (such as uploading captured images to Firebase Storage) are offloaded to dedicated background worker threads. This guarantees that the live video feed runs smoothly at a strict 30 FPS without experiencing UI freezing or frame drops.
+​🔍 Smart Local Caching First: Optimized image loading protocols verify local file paths before attempting cloud database handshakes. This architectural choice dramatically cuts latency times down to milliseconds.
+​🛡️ Security Proctoring Engine: Real-time facial identification checks students against trained local models, logs continuous updates, and reports anomalies (unknown users/impersonation tokens) to both local CSV logs and cloud references.
+​📱 Desktop Fluidity on Any Hardware: Structured entirely using QStackedWidget for clean memory-efficient view routing.
+​🛠️ Prerequisites & Installation
+​1. Clone the repository
+git clone [https://github.com/0Wdismaelgenom0/AI-Smart-Proctoring-System.git](https://github.com/0Wdismaelgenom0/AI-Smart-Proctoring-System.git)
+cd AI-Smart-Proctoring-System
+2. Install Dependencies
+​Make sure you have CMake and Python installed on your environment, then run:
+pip install -r requirements.txt
+3. Firebase Configuration Setup
+​Before initiating the application tracking suite, place your Firebase private key configuration file named serviceAccountKey.json inside the root directory.
+​💻 Tech Stack & Core Libraries
+Component Library Used Purpose
+Core Language Python System Development
+GUI Framework PySide2 (Qt for Python) Desktop UI Elements & Event Routing
+Computer Vision OpenCV & CVZone Video Capture & Frame Blitting
+Deep Learning Face Recognition (dlib backend) Vector Encodings & Face Matching
+Cloud Backend Firebase Admin SDK Realtime DB, Auth, and Cloud Storage
+👨‍💻 Developer
+​Mohammed Wad Ismail - Core System Architect & Lead Developer - 0Wdismaelgenom0 
