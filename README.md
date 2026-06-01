@@ -11,6 +11,7 @@ The project follows a clean, modular object-oriented structural architecture:
 * **App.py** - Main application driver & routing control.
 * **ui/** - Sub-package containing UI interface structures.
 * **icons/** - Central repository for visual assets and icons.
+* **Images/** - [Local Cache] Generated automatically to store student face tokens.
 
 ---
 
@@ -26,6 +27,17 @@ The project follows a clean, modular object-oriented structural architecture:
 ## 🛠️ Prerequisites & Installation
 
 ### 1. Clone the Repository
-```bash
-git clone [https://github.com/0Wdismaelgenom0/AI-Smart-Proctoring-System.git](https://github.com/0Wdismaelgenom0/AI-Smart-Proctoring-System.git)
+git clone https://github.com/0Wdismaelgenom0/AI-Smart-Proctoring-System.git
 cd AI-Smart-Proctoring-System
+
+### 2. Install Dependencies
+pip install -r requirements.txt
+
+### 3. Firebase Configuration Setup
+Before initiating the application tracking suite, place your Firebase private key configuration file named serviceAccountKey.json inside the root directory.
+
+---
+
+## 👨‍💻 Developer
+
+* **Mohammed Wad Ismail** - *Core System Architect & Lead Developer* - [0Wdismaelgenom0](https://github.com/0Wdismaelgenom0)
